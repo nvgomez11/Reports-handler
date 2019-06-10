@@ -1,0 +1,21 @@
+<div id="search-bar" class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8">
+        <form class="card card-sm">
+            <div class="card-body row div-responsive">
+                <div class="col-auto">
+                    <i class="fas fa-search h4 text-body"></i>
+                </div>
+                <!--end of col-->
+                <div class="col">
+                    {{input type="email" class="form-control form-control-lg form-control-borderless"  placeholder="Search email addresses" value=email required=true }}
+                </div>
+                <!--end of col-->
+                <div class="col-auto">
+                    {{#link-to "reports.new" email tagName='button' type="email" class="btn btn-lg btn-success" id="search-button"}}Search{{/link-to}}
+                </div>
+                <!--end of col-->
+            </div>
+        </form>
+    </div>
+    <!--end of col-->
+</div>

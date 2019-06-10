@@ -1,0 +1,47 @@
+<div id="accordion">
+    <div class="card container" id="card-wrapper">
+        <div class="card-header mb-0" id="headingOne" data-toggle="collapse" href="#contenedor" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            {{this.email-title}}
+        </div>
+
+        <div id="contenedor" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Names</h5>
+                    <ul>
+                        {{#each this.reports.names as |name|}}
+                        <li class="item-format">{{name.full}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Emails</h5>
+                    <ul>
+                        {{#each this.reports.emails as |email|}}
+                        <li class="item-format">{{email.email_address}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Jobs</h5>
+                    <ul>
+                        {{#each this.reports.jobs as |job|}}
+                        <li class="item-format">{{job}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Social</h5>
+                    <ul>
+                        {{#each this.reports.social as |social|}}
+                        <li class="item-format">{{social}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

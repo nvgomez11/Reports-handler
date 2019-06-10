@@ -1,0 +1,6 @@
+<div id="new-report-wrapper">
+    <New-reportpanel @email-title={{this.model.emailTyped}} @reports={{this.model.newReportInfo}}></New-reportpanel>
+
+    <button {{action "saveReport" this.model preventDefault=false}} class="btn btn-lg btn-primary" type="submit">Save
+        report</button>
+</div>

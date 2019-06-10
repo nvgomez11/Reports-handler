@@ -1,0 +1,20 @@
+<Navbar @currentUser={{this.model}}></Navbar>
+
+<div id="search-bar-container">
+    <Search-bar></Search-bar>
+</div>
+
+{{outlet}}
+
+<div id="reports-container">
+    <h2 id="report-title">Check out your reports</h2>
+
+    {{#each this.model.reports as |report|}}
+    <div>
+        <Reports-list @emailTyped={{report.emailTyped}} @report={{report.newReportInfo}} @emailName={{report.emailName}}
+            @componentID={{report.componentID}}>
+        </Reports-list>
+    </div>
+    {{/each}}
+
+</div>

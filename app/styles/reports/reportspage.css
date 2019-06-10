@@ -1,0 +1,63 @@
+#search-bar-container{
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+#reports-container{    
+    text-align: center;
+}
+#report-title{        
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    margin-bottom: 50px;
+}
+
+#card-wrapper{
+    padding: 0px;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .row{
+        display: flex; 
+        align-items: stretch;   
+        justify-content: space-evenly;         
+        flex-wrap: wrap;   
+    }
+    .col-sm-3{
+        width: 45%;
+        max-width: 50%;
+        flex: 1 0 50%;                        
+    }              
+  }
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+    #search-bar-container{
+        margin-top: 50px;
+        margin-bottom: 50px;   
+        text-align: center;     
+    }
+
+    #search-bar{
+        display: inline-block; 
+        width: 100%;         
+    }
+
+    #search-button{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card{
+        align-items: stretch;        
+    }
+    
+}
